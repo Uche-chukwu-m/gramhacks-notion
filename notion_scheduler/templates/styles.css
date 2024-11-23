@@ -1,0 +1,71 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #a8edea, #fed6e3);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #34495e;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #34495e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background: #1abc9c;
+}
+
+/* Link Styling (Optional) */
+a {
+    text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
