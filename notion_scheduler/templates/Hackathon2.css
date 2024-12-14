@@ -1,71 +1,157 @@
-body, h1, h2, p, table, input, button {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
-  
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(to bottom, #a8edea, #fed6e3);*/
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: url('585722-background-caf.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #2c3e50;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header Section */
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #34495e;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Form Styling */
+form label {
+  display: block;
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #555;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1em;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, 
+form textarea:focus {
+  border-color: #34495e;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background: #1abc9c;
+}
+
+/* Output Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: #34495e;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  font-size: 1em;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background: #ffffff;
+}
+
+tbody td {
+  padding: 10px;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
   }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+
   header h1 {
-    color: #333;
+      font-size: 2em;
   }
-  
-  header p {
-    color: #555;
+
+  h2 {
+      font-size: 1.5em;
   }
-  
-  input, button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+
+  form input, 
+  form textarea {
+      font-size: 0.9em;
   }
-  
+
   button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
+      font-size: 1em;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  thead th, 
+  tbody td {
+      font-size: 0.8em;
   }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
+}
