@@ -23,5 +23,4 @@ This project is a **web-based application** designed to help users generate cust
 
 ## 🔧 Installation & Setup
 1. Clone this repository:
-   ```bash
-  https://github.com/Uche-chukwu-m/gramhacks-notion
+   `https://github.com/Uche-chukwu-m/gramhacks-notion`
